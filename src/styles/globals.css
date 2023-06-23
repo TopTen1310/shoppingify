@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .tooltip:before {
+    @apply text-xl;
+  }
+  .myBtn {
+    @apply text-2xl font-bold text-white normal-case rounded-2xl;
+  }
+  .cancelBtn {
+    @apply text-[#34333A] text-2xl font-bold cursor-pointer;
+  }
+  .labelStyle {
+    @apply text-2xl text-[#34333A] font-semibold mb-2.5 inline-block group-focus-within:text-main-orange;
+  }
+  .inputStyle {
+    @apply w-full font-medium text-2xl text-[#34333A] border-2 border-solid border-[#BDBDBD] rounded-2xl px-7 focus:border-main-orange;
+  }
+  .sidePageRes {
+    @apply lg:w-[39rem] lg:min-w-[39rem] sm:w-[34rem] sm:min-w-[34rem] w-full min-w-full;
+  }
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 50%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+}
+
+.shadow1 {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.07);
+  /* color: rgba(249, 161, 9, 0.473); */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hideScrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media (min-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (min-width: 1250px) {
+  html {
+    font-size: 62.5%;
+  }
+}
